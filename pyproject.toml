@@ -1,0 +1,46 @@
+[tool.poetry]
+name = "template-package"
+version = "0.0.1dev"
+description = "Template python package"
+authors = [
+  "Jann Launer",
+]
+
+[build-system]
+requires = ["poetry_core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.dependencies]
+python = ">=3.7, <3.9"
+Sphinx = {version = "^4.3.2", optional = true}
+sphinx-rtd-theme = {version = "^1.0.0", optional = true}
+sphinxcontrib-bibtex = {version = "^2.4.1", optional = true}
+docutils = "^0.17"
+
+
+[tool.poetry.dev-dependencies]
+black = "20.8b1"
+pytest = "^7.0.1"
+coverage = "^6.3.2"
+flake8 = "^4.0.1"
+pre-commit = "^2.17.0"
+
+[tool.poetry.extras]
+docs = ["Sphinx", "sphinx-rtd-theme", "sphinxcontrib-bibtex"]
+preprocessing = ["geopandas"]
+upload_results_to_oep = ["oem2orm"]
+
+[tool.black]
+exclude = '''
+/(
+    \
+  |
+    \.eggs
+  | \.git
+  | \.mypy_cache
+  | meta/migrations
+  | docs
+  | .venv
+)/
+'''
+max-line-length=100
