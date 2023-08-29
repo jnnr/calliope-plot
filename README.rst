@@ -1,13 +1,8 @@
-================
-Template package
-================
+=============
+calliope-plot
+=============
 
-To get started using this template, you should:
-
-- Adapt package name in setup.py, CITATION.cff, docs/conf.py, docs/index.rst
-- Adapt dependencies in setup.py, environment.yaml
-- Choose a license and add it to LICENSE.txt
-- Adapt README.rst
+A collection of plots for calliope inputs and results.
 
 Installation
 ============
@@ -32,7 +27,7 @@ Development
 
 Install dev dependencies:
     
-    pip install template-package[dev]
+    pip install calliope-plot[dev]
 
 Activate pre-commit hooks:
 
@@ -48,9 +43,3 @@ Build docs locally:
     
     cd docs
     make html
-
-Release process
----------------
-
-.. TODO: Describe release procedure.
-- Adapt version in pyproject.toml

@@ -6,7 +6,7 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'template-package'
+project = 'calliope-plot'
 copyright = '2023, Jann Launer'
 author = 'Jann Launer'
 

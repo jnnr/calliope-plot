@@ -6,10 +6,10 @@ authors:
     alias: "@jnnr"
     affiliation: ""
     orcid: "https://orcid.org/0009-0007-2187-1488"
-title: "template-package"
+title: "calliope-plot"
 type: software
 license: 
-version: 0.0.1
+version: 0.0.1.dev
 doi:
 date-released: 
 url: ""
