@@ -1,5 +1,11 @@
-name: template-package
+name: calliope_plot
 channels:
 - conda-forge
 dependencies:
 - python>=3.9
+- matplotlib
+- plotnine
+- pandas
+- pip
+- pip:
+  - -e .
