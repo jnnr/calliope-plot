@@ -1,0 +1,13 @@
+locs,techs,energy_cap
+A,pv,2774.0
+A,wind,9912.0
+A,ccgt,1286.0
+B,pv,5403.0
+B,wind,9499.0
+B,ccgt,1442.0
+C,pv,2639.0
+C,wind,9920.0
+C,ccgt,3435.0
+D,pv,8631.0
+D,wind,5217.0
+D,ccgt,6664.0
