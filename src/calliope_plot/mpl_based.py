@@ -42,3 +42,28 @@ def plot_stacked_bar(
     )
 
     return ax
+
+
+def draw_standalone_legend(
+    c_dict, fig=None, loc="center", ncol=4, fontsize=14, frameon=False, **kwargs
+):
+    import matplotlib.patches as mpatches
+    import matplotlib.pyplot as plt
+
+    if fig is None:
+        fig = plt.figure(figsize=(14, 14))
+
+    patches = [
+        mpatches.Patch(color=color, label=label) for label, color in c_dict.items()
+    ]
+    fig.legend(
+        patches,
+        c_dict.keys(),
+        loc=loc,
+        ncol=ncol,
+        fontsize=fontsize,
+        frameon=frameon,
+        **kwargs,
+    )
+    plt.tight_layout()
+    return fig
