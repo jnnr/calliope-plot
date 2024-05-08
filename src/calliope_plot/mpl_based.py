@@ -30,7 +30,7 @@ def plot_stacked_bar(
 
     color = None
     if color_dict is not None:
-        color = [color_dict[key] for key in df.columns]
+        color = [color_dict[key] for key in _df.columns]
 
     _df.plot.bar(
         ax=ax,
